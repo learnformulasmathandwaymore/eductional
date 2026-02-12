@@ -1,21 +1,41 @@
 <html>
   <body>
     <style>
-      .center
-      {
+      .center {
         text-align: center;
-
       }
-      .hide
-      {
-        color: white
 
+      /* Makes the H fully hidden but still clickable */
+      .hide {
+        color: white;
+        text-decoration: none;
+        user-select: none;
+      }
+
+      /* Removes mouse click highlight on buttons and links */
+      button, a {
+        outline: none;
+      }
+
+      button:focus, a:focus {
+        outline: none;
+      }
+
+      /* Removes the blue highlight on click */
+      button:active, a:active {
+        outline: none;
       }
     </style>
-    <a clasa="hide"> <p class="hide"> H </p></a>
-    <h1 class="center"> Welcome to the eductional website</h1>
-    <h2 class="center">It has eductional stuff like formulas, subjects etc more coming seen</h2>
-    <h3 class="center">It has 8th grade math only!! </h3>
-    <a href="math.html"><button> <p> 8th grade math </p></button></a>
+
+    <!-- Fixed typo: class="hide" -->
+    <a class="hide"><p class="hide">H</p></a>
+
+    <h1 class="center">Welcome to the educational website</h1>
+    <h2 class="center">It has educational stuff like formulas, subjects etc — more coming soon</h2>
+    <h3 class="center">It has 8th grade math only!!</h3>
+
+    <a href="math.html">
+      <button><p>8th grade math</p></button>
+    </a>
   </body>
 </html>
