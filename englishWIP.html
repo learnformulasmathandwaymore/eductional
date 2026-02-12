@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Back button styling */
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Container for iframe */
+    .frame-container {
+      width: 80%;
+      height: 80%;
+      margin-top: 20px;
+      border: 2px solid #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Back button -->
+  <button class="back-btn" onclick="window.location.href='index.html'">
+    Back to Home
+  </button>
+
+  <!-- 80% x 80% iframe -->
+  <div class="frame-container">
+    <iframe src=""></iframe>
+  </div>
+
+</body>
+</html>
