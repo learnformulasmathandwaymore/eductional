@@ -1,52 +1,104 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      margin: 0;
-      background: #f0f0f0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /* Back button styling */
-    .back-btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-
-    /* Container for iframe */
-    .frame-container {
-      width: 80%;
-      height: 80%;
-      margin-top: 20px;
-      border: 2px solid #000;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Hidden English Learning (WIP)</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
+<style>
+    iframe {
+        align-items: center;
+        border: 5px solid black;
+        border-radius: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 65%;
+    }
+
+    .CenterColor {
+        text-align: center;
+        color: rgb(89, 205, 243);
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    #BackButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 15px 20px;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        max-width: 200px;
+        width: 100%;
+        background-color: rgb(36, 184, 184);
+    }
+
+    #FullscreenButton {
+        display: block;
+        margin: 15px auto;
+        padding: 10px 20px;
+        background-color: rgb(30, 150, 200);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    #FullscreenButton:hover {
+        background-color: rgb(20, 120, 170);
+    }
+
+    .color {
+        color: rgb(0, 255, 221);
+    }
+
+</style>
+
 <body>
+<link rel="stylesheet" href="style.css">
 
-  <!-- Back button -->
-  <button class="back-btn" onclick="window.location.href='index.html'">
-    Back to Home
-  </button>
 
-  <!-- 80% x 80% iframe -->
-  <div class="frame-container">
-    <iframe src="learnformulasmathandwaymore
-eductional.github.io"></iframe>
-  </div>
+<h1 class="CenterColor">Sneaky Undercover Gaming Website</h1>
+<h2 class="CenterColor">Welcome to the Sneaky Gaming Bunker.</h2>
+
+<iframe id="gameframe" title="bitlife" width="70%" height="65%" src="Games/bitlife/"></iframe>
+
+<button id="FullscreenButton">⛶ Fullscreen</button>
+
+<button id="BackButton" onclick="window.location.href='../index.html'">Back to Main Page</button>
+
+<a href="https://learnformulasmathandwaymore.github.io/" target="_blank">
+    <p class="color">Fullscreen or Glitched? click here</p>
+</a>
+
+
+<script>
+    const iframe = document.getElementById("gameframe");
+    const fsButton = document.getElementById("FullscreenButton");
+
+    fsButton.onclick = () => {
+        if (iframe.requestFullscreen) iframe.requestFullscreen();
+        else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+        else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+    };
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
