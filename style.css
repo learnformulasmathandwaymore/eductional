@@ -8,20 +8,15 @@
   color: white;
   text-decoration: none;
   user-select: none;
+  cursor: default; /* no pointer on this link */
 }
 
-/* Make the link fully stealthy */
-a {
-  outline: none;
-  -webkit-tap-highlight-color: transparent; /* removes mobile flash */
-  cursor: default; /* removes pointer cursor */
-}
-
-a:hover,
-a:active,
-a:focus {
+/* Keep it stealthy even on interaction */
+.hide:hover,
+.hide:active,
+.hide:focus {
   outline: none;
   background: none;
-  color: inherit; /* prevents hover color change */
-  cursor: default; /* keeps cursor normal */
+  color: inherit;
+  cursor: default; /* no pointer on hover/click */
 }
