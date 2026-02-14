@@ -1,24 +1,27 @@
-  .center {
-        text-align: center;
-      }
+/* Centers text */
+.center {
+  text-align: center;
+}
 
-      /* Makes the H fully hidden but still clickable */
-      .hide {
-        color: white;
-        text-decoration: none;
-        user-select: none;
-      }
+/* Hidden clickable text */
+.hide {
+  color: white;
+  text-decoration: none;
+  user-select: none;
+}
 
-      /* Removes mouse click highlight on buttons and links */
-      button, a {
-        outline: none;
-      }
+/* Make the link fully stealthy */
+a {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /* removes mobile flash */
+  cursor: default; /* removes pointer cursor */
+}
 
-      button:focus, a:focus {
-        outline: none;
-      }
-
-      /* Removes the blue highlight on click */
-      button:active, a:active {
-        outline: none;
-      }
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+  background: none;
+  color: inherit; /* prevents hover color change */
+  cursor: default; /* keeps cursor normal */
+}
