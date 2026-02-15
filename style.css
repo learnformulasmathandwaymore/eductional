@@ -9,7 +9,7 @@ body {
 
 /* Hidden clickable text */
 .hide {
-  color: white;
+  color: rgb(5, 145, 163);
   text-decoration: none;
   user-select: none;
   cursor: default !important; /* force normal cursor */
