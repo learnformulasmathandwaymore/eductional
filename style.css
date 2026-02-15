@@ -1,5 +1,4 @@
-body
-{
+body {
   background-color: rgb(5, 145, 163); /* Adds color onto the website background */
 }
 
@@ -28,6 +27,6 @@ a.hide * {
 .hide:focus {
   outline: none;
   background: none;
-  color: rgb(5, 145, 163);   /* <-- keep it white so it stays invisible */
+  color: rgb(5, 145, 163);   /* <-- matches background so text stays invisible */
   cursor: default !important;
 }
