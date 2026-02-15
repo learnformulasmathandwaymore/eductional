@@ -28,6 +28,6 @@ a.hide * {
 .hide:focus {
   outline: none;
   background: none;
-  color: white;   /* <-- keep it white so it stays invisible */
+  color: rgb(5, 145, 163);   /* <-- keep it white so it stays invisible */
   cursor: default !important;
 }
